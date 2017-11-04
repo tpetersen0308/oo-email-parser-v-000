@@ -4,14 +4,14 @@
 # or whitespace (' ').
 
 class EmailParser
+  attr_accessor :emails_string, :emails_array
 
-  def initialize(emails)
-
-
+  def initialize(emails_string)
+    @emails_string = emails_string
   end
 
-  def self.parse(emails)
-    emails_array = emails.split(/, | /)
+  def parse
+    @emails_array = @emails_string.split(/, | /)
   end
 
 end
