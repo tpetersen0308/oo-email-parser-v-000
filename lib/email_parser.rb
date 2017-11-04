@@ -10,4 +10,8 @@ class EmailParser
 
   end
 
+  def parse(emails)
+    emails_array = emails.split(/, | /)
+  end
+
 end
