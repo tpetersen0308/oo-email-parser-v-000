@@ -12,7 +12,7 @@ class EmailParser
 
   def parse
     @emails_array = @emails_string.split(/, | /)
-    @emails_array.delete_if { |email| @emails_array.select { |element| element == email }}
+    
   end
 
 end
